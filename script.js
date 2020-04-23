@@ -1,23 +1,16 @@
-var quizContainer = document.getElementsById("quiz");
-var startButton = document.getElementsById("start");
+var quizContainer = document.getElementById("quiz");
+var startButton = document.getElementById("start");
 
-function startQuiz()  {
+function startQuiz() {}
 
-}
-
-function buildQuiz()  {
+function buildQuiz() {
   var output = [];
-  quizQuestions.forEach(
-    (currentQuestion, questionNumber) => {
-      var answers = [];
-      for(letter in currentQuestion.answers)  {
-        answers.push(
-          
-        )
-      }
-
+  quizQuestions.forEach((currentQuestion, questionNumber) => {
+    var answers = [];
+    for (letter in currentQuestion.answers) {
+      answers.push();
     }
-  )
+  });
 }
 
 var quizQuestions = [
@@ -27,68 +20,62 @@ var quizQuestions = [
       a: "",
       b: "",
       c: "",
-      d: ""
-},
-  correctAnswer: ""
-  }
-
+      d: "",
+    },
+    correctAnswer: "",
+  },
   {
     question: "",
     answers: {
       a: "",
       b: "",
       c: "",
-      d: ""
-},
-  correctAnswer: ""
-  }
-
+      d: "",
+    },
+    correctAnswer: "",
+  },
   {
     question: "",
     answers: {
       a: "",
       b: "",
       c: "",
-      d: ""
-},
-  correctAnswer: ""
-  }
-
+      d: "",
+    },
+    correctAnswer: "",
+  },
   {
     question: "",
     answers: {
       a: "",
       b: "",
       c: "",
-      d: ""
-},
-  correctAnswer: ""
-  }
-
+      d: "",
+    },
+    correctAnswer: "",
+  },
   {
     question: "",
     answers: {
       a: "",
       b: "",
       c: "",
-      d: ""
-},
-  correctAnswer: ""
-  }
-
+      d: "",
+    },
+    correctAnswer: "",
+  },
   {
     question: "",
     answers: {
       a: "",
       b: "",
       c: "",
-      d: ""
-},
-  correctAnswer: ""
-  }
+      d: "",
+    },
+    correctAnswer: "",
+  },
 ];
 
 buildQuiz();
 
 startButton.addEventListener("click", startQuiz);
-
