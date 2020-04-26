@@ -11,18 +11,19 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Javascript Trivia!</title>
+    <title>Pop Quiz Highscores</title>
   </head>
   <body class="container">
     <header class="mt-2">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a id="quiz" class="nav-link active text-success" href="./index.html"
-            >Quiz</a
-          >
+          <a id="quiz" class="nav-link text-info" href="./index.html">Quiz</a>
         </li>
         <li class="nav-item">
-          <a id="highScores" class="nav-link text-info" href="./highscore.html"
+          <a
+            id="highScores"
+            class="nav-link active text-success"
+            href="./highscore.html"
             >High Scores</a
           >
         </li>
@@ -31,11 +32,11 @@
     <main
       class="m-5 d-flex flex-column justify-content-center align-items-center"
     >
-      <div id="quizContainer" class="row d-flex flex-column"></div>
-      <div id="answersContainer" class="row"></div>
+      <h2>High Scores</h2>
+      <div id="highScoresContainer" class="d-flex flex-column"></div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="./highscore.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

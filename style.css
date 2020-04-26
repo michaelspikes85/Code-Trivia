@@ -1,0 +1,14 @@
+.container {
+  width: 65vw;
+  max-width: 65vw;
+}
+
+#quizContainer {
+  width: 60vw;
+  max-width: 60vw;
+}
+
+#highScoresContainer {
+  width: 60vw;
+  max-width: 60vw;
+}
